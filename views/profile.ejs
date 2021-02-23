@@ -1,0 +1,54 @@
+<head>
+    
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+
+<div class="profile">
+    <!-- user info -->
+    <div class="profile__top">
+        <img src="https://thumbs.dreamstime.com/b/scattered-numbers-wallpaper-background-use-use-design-layouts-content-creation-scattered-numbers-wallpaper-166001346.jpg"
+            alt="" srcset="">
+        <div class="profile__about">
+            <div class="profile__about--img">
+                <img src="<%=user.image%>"
+                    alt="">
+            </div>
+            <h4 class="profile__about--name"><%=user.userName%></h4>
+            <h5 class="profile__about--userName">@<%=user.userName%></h5>
+            <p> man from zulfi | like hunt </p>
+
+            <div class="profile__about--follow">
+               <a href="/following"> <h5> <%=user.followings.length%> <span>Follwing </span></h5> </a>
+               <a href="/followers"> <h5> <%=user.followers.length%> <span>Followers</span></h5> </a>
+            </div>
+        </div>
+    </div>
+<!-- end of user info -->
+    <!-- user twitts -->
+    <% user.tweets.forEach((tweet) => { %>
+        <div class="home__main__twitt">
+            <div class="home__main__twitt--img">
+                <img src="<%=user.image%>"
+                        alt="">
+            </div>
+    
+            <div class="home__main__twitt__right">
+                <h4 class="home__main__twitt__right--h4">
+                    <%=user.name%> <span> @ <%=user.userName%></span> · <span> 1m </span>
+                </h4>
+                <p class="home__main__twitt__right--p">
+                    <%=user.tweet%>
+                </p>
+                <div class="home__main__twitt--icons">
+                    <img src="https://www.flaticon.com/svg/static/icons/svg/590/590670.svg" alt="" srcset="">
+                    <img src="https://www.flaticon.com/svg/static/icons/svg/1388/1388895.svg" alt="" srcset="">
+                    <img src="https://www.flaticon.com/svg/static/icons/svg/535/535285.svg" alt="" srcset="">
+                    <img src="https://www.flaticon.com/svg/static/icons/svg/929/929610.svg" alt="" srcset="">
+    
+                </div>
+            </div>
+        </div>
+        <%})%>
+    <!-- end -->
+    </div>

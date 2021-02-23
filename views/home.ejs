@@ -1,0 +1,80 @@
+<head>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+
+<div class="home__top">
+    <div class="home__top__right">
+        <img src="https://www.vippng.com/png/full/37-370063_sparkle-sparklemoji-glitter-emoji-blue-purple-sparkle-png.png"
+            alt="" srcset="">
+    </div>
+    <div class="home__top__center">
+        <img src="https://www.lter-europe.net/document-archive/image-gallery/albums/logos/TwitterLogo_55acee.png/image"
+            alt="" srcset="">
+    </div>
+    <div class="home__top__left">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png"
+            alt="" srcset="">
+    </div>
+</div>
+
+<div class="home__main">
+    <!-- start of one twitt -->
+    <% user.followings.forEach((user) => { %>
+        <%user.tweets.reverse()%>
+        <% user.tweets.forEach((tweet) => { %>
+            <div class="home__main__twitt">
+                <div class="home__main__twitt--img">
+                    <img src="<%=user.image%>"
+                        alt="">
+                </div>
+    
+                <div class="home__main__twitt__right">
+                    <h4 class="home__main__twitt__right--h4">
+                        <%=user.name%> <span> @<%=user.userName%></span> · <span> 1m </span>
+                    </h4>
+                    <p class="home__main__twitt__right--p">
+                        <%=tweet%>
+                    </p>
+                    <div class="home__main__twitt--icons">
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/590/590670.svg" alt="" srcset="">
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/1388/1388895.svg" alt="" srcset="">
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/535/535285.svg" alt="" srcset="">
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/929/929610.svg" alt="" srcset="">
+    
+                    </div>
+                </div>
+            </div>
+            <!-- end of one twitt -->
+        <% }) %>
+    <% }) %>
+
+    <%user.tweets.reverse()%>
+    <% user.tweets.forEach((tweet) => { %>
+        <div class="home__main__twitt">
+            <div class="home__main__twitt--img">
+                <img src="<%=user.image%>"
+                    alt="">
+            </div>
+
+            <div class="home__main__twitt__right">
+                <h4 class="home__main__twitt__right--h4">
+                    <%=user.name%> <span> @<%=user.userName%></span> · <span> 1m </span>
+                </h4>
+                <p class="home__main__twitt__right--p">
+                    <%=tweet%>
+                </p>
+                <div class="home__main__twitt--icons">
+                    <img src="https://www.flaticon.com/svg/static/icons/svg/590/590670.svg" alt="" srcset="">
+                    <img src="https://www.flaticon.com/svg/static/icons/svg/1388/1388895.svg" alt="" srcset="">
+                    <img src="https://www.flaticon.com/svg/static/icons/svg/535/535285.svg" alt="" srcset="">
+                    <img src="https://www.flaticon.com/svg/static/icons/svg/929/929610.svg" alt="" srcset="">
+
+                </div>
+            </div>
+        </div>
+        <!-- end of one twitt -->
+    <% }) %>
+    
+</div>
+

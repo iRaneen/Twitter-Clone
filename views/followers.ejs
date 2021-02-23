@@ -1,0 +1,52 @@
+<head>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+
+<!-- https://www.flaticon.com/svg/static/icons/svg/507/507257.svg -->
+<div class="home__top">
+    <div class="home__top__right">
+        <img src="https://www.vippng.com/png/full/37-370063_sparkle-sparklemoji-glitter-emoji-blue-purple-sparkle-png.png"
+            alt="" srcset="">
+    </div>
+    <div class="home__top__center">
+      <h2 style="color: rgb(85, 172, 238);"> Followers</h2>
+    </div>
+    <div class="home__top__left">
+        <a href="/profile">
+        <img src="https://www.flaticon.com/svg/static/icons/svg/507/507257.svg"
+            alt="" srcset="">
+        </a>
+    </div>
+</div>
+
+
+
+
+
+<!-- start from hare  -->
+
+<div class="home__main">
+<% for( let i = 0; i <user.followers.length; i++ ) { %>
+    <div class="home__main__twitt">
+        <div class="home__main__twitt--img">
+            <img src=" <%=user.followers[i].image%>"
+                alt="">
+        </div>
+    
+        <div class="home__main__twitt__right">
+            <h4 class="home__main__twitt__right--h4">
+                <%=user.followers[i].name%> <span> @<%=user.followers[i].userName%></span> · <span> 1m </span>
+            </h4>
+            <div class="profile__about--follow-2">
+              <!-- <form action="">
+               <input type="submit" value="Follwo">
+              </form> -->
+                   
+                
+            </div>
+        </div>
+    </div>
+<% } %>
+
+</div>

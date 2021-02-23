@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:rgb(85, 172, 238);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h2 {
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.938);
+ 
+    font-weight: 300;
+  position: fixed;
+  bottom: 30px;
+ right: 50%;
+ transform: translate(50%,-50%);
+  }
+
+/* samsung s10+ */
+
+.continer{
+
+    width: 411px;
+    height: 812px;
+    border: 1px solid rgba(98, 98, 98, 0.246);
+    background-color: #FFF;
+    position: relative;
+}
+
+.home_botom{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: -1px;
+    background-color: #fff;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.home_botom img {
+    width: 30px;
+    height: 30px;
+    filter: invert(13%) sepia(0%) saturate(4091%) hue-rotate(345deg) brightness(94%) contrast(78%);
+}

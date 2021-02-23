@@ -1,0 +1,153 @@
+
+/* 
+home__top
+home__top__right
+home__top__center
+home__top__left
+home__main
+home__main__twitt
+home__main__twitt--img
+home__main__twitt__right
+home__main__twitt__right--h4
+home__main__twitt__right--p
+*/
+
+.home__top{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+
+}
+.home__top img{
+    height: 50px;
+    width: 50px;
+}
+.home__top__left img {
+    height: 33px;
+    width: 36px;
+    margin-left: 5px;
+    filter: invert(63%) sepia(21%) saturate(1243%) hue-rotate(166deg) brightness(96%) contrast(94%);    
+}
+.home__top__right img {
+    height: 21px;
+    width: 30px;
+    margin: 4px;
+    filter: invert(63%) sepia(21%) saturate(1243%) hue-rotate(166deg) brightness(96%) contrast(94%);    
+
+    
+}
+
+.home__main{
+    height: calc(100% - 60px);
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    /* background-color: rgba(0, 0, 255, 0.226); */
+}
+
+.home__main__twitt{
+    display: flex;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+
+}
+.home__main__twitt--img{
+    margin: 10px ;
+
+}
+.home__main__twitt--img img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin: auto;
+    
+}
+.home__main__twitt__right{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.home__main__twitt__right span{
+    color: rgba(0, 0, 0, 0.596);
+}
+
+.home__main__twitt--icons img{
+    width: 16px;
+    height: 16px;
+    margin-right: 50px;
+    filter: invert(13%) sepia(0%) saturate(4091%) hue-rotate(345deg) brightness(94%) contrast(78%);
+}
+.home__main__twitt--icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    
+}
+
+.home__main::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.home__main::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.home__main::-webkit-scrollbar-thumb
+{
+	background-color: #0ae;
+	
+	background-image: -webkit-gradient(linear, 0 0, 0 100%,
+	                   color-stop(.5, rgba(255, 255, 255, .2)),
+					   color-stop(.5, transparent), to(transparent));
+}
+
+
+.search-bar {
+    
+}
+
+.search-bar__submit{
+    margin-right: 70px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(85, 172, 238) ;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+  
+}
+.search-bar__submit:focus, 
+.search-bar__submit:active
+
+{
+    outline:none;
+    padding: 10px;
+    border: none;
+    background-color: rgb(85, 172, 238) ;
+    color: white;
+    border-radius: 15px;
+}
+.search-bar__text {
+    background-color:rgba(85, 172, 238, 0.198); 
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: wheat;
+}
+.search-bar__text:focus{
+    outline:none;
+    background-color:rgba(85, 172, 238, 0.198); 
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: wheat;
+}
